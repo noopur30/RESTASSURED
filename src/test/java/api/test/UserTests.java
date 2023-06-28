@@ -47,7 +47,7 @@ public class UserTests {
 		logger.info("loding user payload");
 		Response response=UserEndPoints.createuser(userpayload);
 		
-		response.then().log().all();
+		response.then().log().all();;
 		Assert.assertEquals(response.getStatusCode(), 200);
 		logger.info("User Created");//Similarly log messages can be added to other methods as well
 		
